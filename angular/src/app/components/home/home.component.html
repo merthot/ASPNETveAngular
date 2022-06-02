@@ -1,0 +1,12 @@
+<div class="container">&nbsp;
+    <h1>Son Eklenen Dersler</h1>
+    <div *ngFor="let ders of dersler">
+        <h1>{{ders.dersAdi}}</h1>
+        <p>
+            <b>Ders Kodu : </b> {{ders.dersKodu}} &nbsp;&nbsp;
+            <b>Kategori : </b> <a href="#" [routerLink]="['/Kategori',ders.dersKatId]"><button mat-raised-button color="primary">{{ders.dersKatAdi}}</button></a> &nbsp;&nbsp;
+            <b>Ders Saati : </b> {{ders.dersSaati}} &nbsp;&nbsp;
+            <b>Üye Sayısı : </b> {{ders.dersUyeSayisi}} &nbsp;&nbsp;    
+        </p>
+    </div>
+</div>

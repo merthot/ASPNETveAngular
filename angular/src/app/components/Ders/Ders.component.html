@@ -1,0 +1,10 @@
+<div class="container" *ngIf="Ders">
+  <button mat-fab color="primary" matTooltip="Son Eklenenler" [routerLink]="['']">
+    <mat-icon aria-label="label">arrow_back</mat-icon>
+  </button>
+  <h1>{{Ders.dersAdi}}</h1>
+  <b>Kategori  : </b>  {{Ders.dersKatAdi}} &nbsp;&nbsp;
+  <b>Ders Kodu  : </b>  {{Ders.dersKodu}} &nbsp;&nbsp;
+  <b>Ders Saati  : </b>  {{Ders.dersSaati}} &nbsp;&nbsp;
+  <b>Ders Üye Sayısı  : </b>  {{Ders.dersUyeSayisi}} &nbsp;&nbsp;
+</div>

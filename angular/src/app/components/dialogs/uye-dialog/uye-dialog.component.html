@@ -1,0 +1,32 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+  <span>{{dialogBaslik}}</span>
+</mat-toolbar>
+<div class="container">
+
+  <form [formGroup]="frm">
+    <mat-form-field appearance="outline">
+      <input matInput formControlName="uyeMail" placeholder="Üye Mail" name="uyeMail" required type="text">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input matInput formControlName="uyeAdsoyad" placeholder="Adı Soyadı" name="uyeAdsoyad" required type="text">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <input matInput formControlName="uyeSifre" placeholder="Üye Parola" name="uyeSifre" required type="password">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" *ngIf="apiServis.oturumKontrol()">
+      <mat-label>Üye Yetki</mat-label>
+      <mat-select matSelect formControlName="UyeYetki" placeholder="UyeYetki">
+        <mat-option [value]= 1 >Admin</mat-option>
+        <mat-option [value]= 0 >Üye</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+
+</div>
+
+<button mat-raised-button color="primary" (click)="dialogRef.close(frm.value)"
+  [disabled]="frm.invalid">Kaydet</button>&nbsp;
+<button mat-raised-button color="warn" (click)="dialogRef.close()">Kapat</button>&nbsp;
+

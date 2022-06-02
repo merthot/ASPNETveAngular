@@ -1,0 +1,15 @@
+<div class="container">
+  <button mat-fab color="primary" matTooltip="Son Eklenenler" [routerLink]="['']">
+    <mat-icon aria-label="label">arrow_back</mat-icon>
+  </button>
+  <h1>{{kat?.katAdi}} Kategori Dersleri</h1>
+  <h3 style="color: red" *ngIf="dersler?.length==0">Henüz Bu Kategoriye Ders Eklenmedi!</h3>
+  <div *ngFor="let ders of dersler">
+  <h2>{{ders.dersAdi}}</h2>
+  <p>
+  <b>Kategori  : </b>  {{ders.dersKatAdi}} &nbsp;&nbsp;
+  <b>Ders Kodu  : </b>  {{ders.dersKodu}} &nbsp;&nbsp;
+  <a href="#" [routerLink]="['/Ders',ders.dersId]"><button mat-raised-button color="primary">Ders Detay</button></a>
+  </p>
+  </div>
+</div>
