@@ -3,9 +3,6 @@
 
 Metin Mert Hot İnternet Programcılığı Final Projesi - Eğitim Portalı
 
-## SİTE ÖZELLİKLERİ
-Soru sorup yanıtlayabilmek için, oturum açmanız gerekmekte. Anasayfada son sorulan 5 soru sıralanmakta. Adminlere özel panel olup, kategorileri, soruları,yanıtları ve üyeleri düzenleme-silme işlemleri yapılabilmekte.
-
 
 ## SİTE İÇİ GÖRÜNTÜLER
 
