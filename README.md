@@ -1,7 +1,7 @@
 # ASPNETveAngular
 
 
-Metin Mert Hot İnternet Programcılığı Final Projesi - Eğitim Portalı
+ASPNET ve Angular kullanarak hazıraldığım eğitim portalı projesi. Giriş yapanların kendilerine göre eğitim ekleyebileceği, seçebileceği, silebileceği bir platform oluşturdum.
 
 
 ## SİTE İÇİ GÖRÜNTÜLER
